@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#071739" />
+<title>দোয়ার ভান্ডার</title>
+
+<link rel="manifest" href="manifest.json">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    -webkit-tap-highlight-color:transparent;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#071739;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+header{
+    padding:25px;
+    text-align:center;
+    background:linear-gradient(135deg,#0b2a66,#071739);
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 20px rgba(0,0,0,.4);
+}
+
+header h1{
+    font-size:32px;
+    font-weight:bold;
+}
+
+header p{
+    margin-top:8px;
+    color:#cfd8ff;
+}
+
+.container{
+    width:95%;
+    max-width:1000px;
+    margin:auto;
+    padding:20px 0;
+}
+
+.card{
+    background:#0d2147;
+    border-radius:20px;
+    padding:20px;
+    margin-bottom:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+    transition:.4s;
+    animation:fadeUp .7s ease;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
+}
+
+.card h2{
+    color:#7db4ff;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.arabic{
+    font-size:28px;
+    line-height:2;
+    text-align:right;
+    margin-bottom:20px;
+    color:#fff;
+}
+
+.pronounce{
+    background:#102b5e;
+    padding:15px;
+    border-radius:15px;
+    margin-bottom:15px;
+    color:#dfe8ff;
+    line-height:1.8;
+}
+
+.meaning{
+    background:#0a1b3c;
+    padding:15px;
+    border-radius:15px;
+    color:#fff;
+    line-height:1.8;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#a7b8e8;
+}
+
+.installBtn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#2b7fff;
+    color:#fff;
+    border:none;
+    padding:15px 22px;
+    border-radius:50px;
+    font-size:16px;
+    cursor:pointer;
+    box-shadow:0 5px 20px rgba(0,0,0,.4);
+    display:none;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2b7fff;
+    border-radius:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>দোয়ার ভান্ডার</h1>
+    <p>অফলাইনেও চলবে • Premium Islamic PWA</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>সাইয়্যিদুল ইস্তিগফার</h2>
+
+        <div class="arabic">
+            اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَهَ إِلَّا أَنْتَ خَلَقْتَنِي وَأَنَا عَبْدُكَ
+        </div>
+
+        <div class="pronounce">
+            <strong>উচ্চারণ:</strong><br><br>
+            আল্লাহুম্মা আন্তা রাব্বি লা ইলাহা ইল্লা আন্তা খালাকতানি ওয়া আনা আবদুকা।
+        </div>
+
+        <div class="meaning">
+            <strong>অর্থ:</strong><br><br>
+            হে আল্লাহ! আপনি আমার প্রতিপালক। আপনি ছাড়া কোনো উপাস্য নেই। আপনি আমাকে সৃষ্টি করেছেন এবং আমি আপনার বান্দা।
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>ঘুমানোর দোয়া</h2>
+
+        <div class="arabic">
+            بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا
+        </div>
+
+        <div class="pronounce">
+            <strong>উচ্চারণ:</strong><br><br>
+            বিসমিকা আল্লাহুম্মা আমুতু ওয়া আহইয়া।
+        </div>
+
+        <div class="meaning">
+            <strong>অর্থ:</strong><br><br>
+            হে আল্লাহ! আপনার নামেই আমি মৃত্যু বরণ করি এবং জীবিত হই।
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>খাবার শুরু করার দোয়া</h2>
+
+        <div class="arabic">
+            بِسْمِ اللَّهِ
+        </div>
+
+        <div class="pronounce">
+            <strong>উচ্চারণ:</strong><br><br>
+            বিসমিল্লাহ।
+        </div>
+
+        <div class="meaning">
+            <strong>অর্থ:</strong><br><br>
+            আল্লাহর নামে শুরু করছি।
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 দোয়ার ভান্ডার • Offline Ready
+</footer>
+
+<button class="installBtn" id="installBtn">
+Install App
+</button>
+
+<script>
+if ('serviceWorker' in navigator) {
+
+    const sw = `
+    const cacheName = 'dua-app-v1';
+
+    self.addEventListener('install', e => {
+        e.waitUntil(
+            caches.open(cacheName).then(cache => {
+                return cache.addAll(['./']);
+            })
+        );
+    });
+
+    self.addEventListener('fetch', e => {
+        e.respondWith(
+            caches.match(e.request).then(response => {
+                return response || fetch(e.request);
+            })
+        );
+    });
+    `;
+
+    const blob = new Blob([sw], {type:'text/javascript'});
+    const swURL = URL.createObjectURL(blob);
+
+    navigator.serviceWorker.register(swURL);
+}
+
+let deferredPrompt;
+const installBtn = document.getElementById('installBtn');
+
+window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    installBtn.style.display = 'block';
+});
+
+installBtn.addEventListener('click', async () => {
+    if(deferredPrompt){
+        deferredPrompt.prompt();
+        deferredPrompt = null;
+    }
+});
+
+document.addEventListener('contextmenu', e => e.preventDefault());
+
+document.addEventListener('selectstart', e => e.preventDefault());
+</script>
+
+</body>
+</html>
